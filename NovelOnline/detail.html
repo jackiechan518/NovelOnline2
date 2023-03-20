@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/detail.css" />
+  <link rel="stylesheet" href="./css/rate.css">
+  <script src="./js/jquery-3.6.3.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet' />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <nav class="container">
+      <ul class="menu container d-flex">
+        <li>
+          <a href="#"><img src="./img/logo2.png" height="50px" alt="" /></a>
+        </li>
+        <li class="category">
+          <a href="#">
+            Thể loại
+            <i class="fa-solid fa-caret-down icon-category"></i>
+          </a>
+          <ul class="sub-menu sub-menu-category">
+            <li><a href="#">Tất Cả</a></li>
+            <li><a href="">Huyền Huyễn</a></li>
+            <li><a href="">Võng Du</a></li>
+            <li><a href="">Đồng Nhân</a></li>
+            <li><a href="">Cạnh Kỹ</a></li>
+            <li><a href="">Kiếm Hiệp</a></li>
+            <li><a href="">Tiên Hiệp</a></li>
+            <li><a href="">Khoan Huyễn</a></li>
+            <li><a href="">Đô Thị</a></li>
+            <li><a href="">Dã Sử</a></li>
+            <li><a href="">Huyền Nghi</a></li>
+            <li><a href="">Kì Ảo</a></li>
+          </ul>
+        </li>
+        <li class="rank">
+          <a href="#">
+            Bảng xếp hạng
+            <i class="fa-solid fa-caret-down icon-category"></i>
+          </a>
+          <ul class="sub-menu sub-menu-rank">
+            <li><a href="#">Thịnh Hành</a></li>
+            <li><a href="#">Đọc Nhiều</a></li>
+            <li><a href="#">Tặng Thưởng</a></li>
+            <li><a href="#">Đề Cử</a></li>
+            <li><a href="#">Yêu Thích</a></li>
+            <li><a href="#">Thảo Luận</a></li>
+          </ul>
+        </li>
+        <li>
+          <form action="" id="search-box">
+            <input type="text" id="search-text" />
+            <button id="search-btn">
+              <i class="fa-solid fa-magnifying-glass icon-search"></i>
+            </button>
+          </form>
+        </li>
+        <li><a href="#" class="login">Đăng nhập</a></li>
+        <li><a href="#" class="register">Đăng ký</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="wp-content">
+    <!-- SLIDER -->
+    <div id="carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#"><img src="./img/bia1.jpg" class="d-block w-100" alt="anhbia1" /></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="./img/bia2.jpg" class="d-block w-100" alt="anhbia2" /></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="./img/bia3.jpg" class="d-block w-100" alt="anhbia3" /></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- END SLIDER -->
+    <div class="container detail">
+      <div class="row">
+        <div class="col-12 d-flex mt-4 ms-3">
+          <div class="avatar float-left me-4">
+            <a href="#"><img class="img_shadown" src="./img/avatar.jpg" alt="" width="180" height="240"
+                class="avatar_mention" /></a>
+          </div>
+          <div class="detail_des float-right ">
+
+            <div class="title_book">
+              <a href="#" style="color:black">Tu La Thần Võ</a>
+              <i class="fa-solid fa-flag"></i>
+            </div>
+
+            <div class="tag_book mt-2 mb-2">
+              <a href="#" class="d-inline-block border border-secondary px-3 py-1 text-secondary rounded-3">Thiện Lương
+                Mật Phong</a>
+              <a href="#" class="d-inline-block border border-danger px-3 py-1 text-danger rounded-3">Đang Ra</a>
+              <a href="#" class="d-inline-block border border-primary px-3 py-1 text-primary rounded-3">Huyền Huyễn</a>
+            </div>
+
+            <ul class="list-unstyled d-flex mb-2 mt-3">
+              <li class="me-4">
+                <div class=" h5 mb-1">5518</div>
+                <div>Chương</div>
+              </li>
+              <li class="me-4">
+                <div class=" h5 mb-1">9</div>
+                <div>Chương/tuần</div>
+              </li>
+              <li class="me-4">
+                <div class=" h5 mb-1">4.8M</div>
+                <div>Lượt đọc</div>
+              </li>
+              <li class="me-4">
+                <div id="bookmarkedValue" class=" h5 mb-1">1950</div>
+                <div>Cất giữ</div>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center mb-3">
+              <span class="mai-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="d-inline-block ml-2"><span class="fw-bold">4</span>/5</span>
+                <span class="d-inline-block text-secondary ml-1 ">(30 đánh giá)</span>
+            </div>
+
+            <div class="linkToRead d-flex">
+              <div style="width: 145px;"
+                class="reading d-flex cursor-pointer btn btn-primary btn-md btn-block btn-shadow align-items-center justify-content-center">
+                <a href="" class="text-white fw-bold">
+                  <i class="fa-solid fa-glasses"></i>
+                  Đọc Truyện</a>
+              </div>
+              <div style="width: 145px;"
+                class="mark_book d-flex ms-2 me-2 btn btn-outline-secondary btn-md btn-block align-items-center justify-content-center">
+                <a href="" class="text-dark fw-bold">
+                  <i class="fa-solid fa-bookmark"></i>
+                  Đánh Dấu
+                </a>
+              </div>
+              <div style="width: 145px;"
+                class="suggest d-flex btn btn-outline-warning btn-md btn-block bg-yellow-white text-primary align-items-center justify-content-center">
+                <a href="#" class="text-dark fw-bold">
+                  <i class="fa-solid fa-medal"></i>
+                  Đề Cử
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAV TABS -->
+      <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active fs-5 text-dark fw-semibold" id="intro-tab" data-bs-toggle="tab"
+            data-bs-target="#intro" type="button" role="tab" aria-controls="home" aria-selected="true">Giới
+            Thiệu</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5 text-dark fw-semibold" id="rate-tab" data-bs-toggle="tab" data-bs-target="#rate"
+            type="button" role="tab" aria-controls="rate" aria-selected="false">Đánh Giá <span style="font-size: 12px;"
+              class="border border-dark fw-light rounded-pill ps-2 pe-2">30</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5 text-dark fw-semibold" id="list-tab" data-bs-toggle="tab" data-bs-target="#list"
+            type="button" role="tab" aria-controls="list" aria-selected="false">Danh Sách Chương <span
+              style="font-size: 12px;" class="border border-dark fw-light rounded-pill ps-2 pe-2">5518</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5 text-dark fw-semibold" id="cmt-tab" data-bs-toggle="tab" data-bs-target="#cmt"
+            type="button" role="tab" aria-controls="cmt" aria-selected="false">Bình Luận <span style="font-size: 12px;"
+              class="border border-dark fw-light rounded-pill ps-2 pe-2">555</span></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+          <div class="row mt-4">
+            <div class="col-8">
+              <div class="mb-4">
+                <div class="content mt-2 glass p-2">
+                  <p>Luận tiềm lực, không tính thiên tài, có thể Huyền công võ kỹ, đều có thể vô sự tự
+                    thông.<br><br>Luận mị lực, thiên kim tiểu thư tính là gì, yêu nữ Thánh nữ, đều yêu ta muốn ngừng mà
+                    không được.<br><br>Luận thực lực , mặc cho ngươi có ngàn vạn chí bảo, nhưng định không địch lại ta
+                    giới linh đại quân.<br><br>Ta là ai ? Thiên hạ chúng sinh xem ta vì Tu La, lại không biết, ta lấy Tu
+                    La thành Võ Thần.<br><br>Đẳng cấp: Linh Vũ, Nguyên Vũ, Huyền Vũ, Thiên Vũ, Vũ Quân, Vũ Vương, Vũ
+                    Đế, Vũ Tổ. . . .<br><br>* Các bạn ủng hộ bằng 3 phương thức:<br>1. Bấm vào 5 sao bên phải màn
+                    hình.<br>2. Bấm đề cử, chọn số Nguyệt phiếu. ( Chỉ áp dụng với bạn có Tài khoản của
+                    KTC)<br>3. Ấn nút Tặng đậu cuối chương.<br>Chân thành cảm ơn!</p>
+                </div>
+              </div>
+              <table class="table border-top border-bottom mb-4 mt-5">
+                <tbody class="glass">
+                  <tr>
+                    <td style="width: 130px;">Đề cử</td>
+                    <td>
+                      <div class="media d-flex">
+                        <div class="media-body" style="width: 500px; height: 22px;">
+                          <div class="d-flex align-items-center"> <i class="fa-solid fa-medal me-1 ms-2"></i> 16
+                          </div>
+                        </div>
+                        <div class="fw-bold">No. 662</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="" style="width: 130px;">Chương mới</td>
+                    <td>
+                      <ul class="list-unstyled mb-0">
+                        <li class="media d-flex">
+                          <div class="media-body" style="width: 480px; height: 22px;"><a
+                              href="https://metruyencv.com/truyen/tu-la-vu-than/chuong-5520">Chương 5508: Đột nhiên
+                              thanh âm</a></div>
+                          <div>3 giờ trước</div>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mt-5"></div>
+            </div>
+            <div class="col-4">
+              <div class="mt-2 mb-4 glass rounded-2 p-4 glass">
+                <div class="mai-avatar mai-avatar--90 mx-auto mb-3" style="cursor: pointer;"><img class="img-fluid"
+                    src="./img/avatar_user.jpg"> <span class="level bg-danger rounded-3 text-white">Đồng</span>
+                </div>
+                <div class="h4 py-3 text-center">
+                  Giấy Trắng
+                </div>
+                <div class="row no-gutters text-center">
+                  <div class="col-4"><i class="mai-icon icon-book text-primary h4 m-0"></i>
+                    <div class="my-2">Số truyện</div>
+                    <div class="h4 mb-0">112</div>
+                  </div>
+                  <div class="col-4"><i class="mai-icon icon-layer text-primary h4 m-0"></i>
+                    <div class="my-2">Số chương</div>
+                    <div class="h4 mb-0">76,6k</div>
+                  </div>
+                  <div class="col-4"><i class="mai-icon icon-badge text-primary h4 m-0"></i>
+                    <div class="my-2">Cấp</div>
+                    <div class="h4 mb-0">4</div>
+                  </div>
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="rate" role="tabpanel" aria-labelledby="rate-tab">
+
+          <div id="reviews_book" class="row mt-3">
+            <div class="col-8">
+              <div class="glass bg-light p-3 review-form rounded-2 mb-3">
+                <div class="p-3 text-primary">
+
+                  <div style="text-align: center;" class="text-dark fw-bold">TÍNH CÁCH NHÂN VẬT</div>
+                  <div class="form-rate">
+                    <form>
+                      <div class="rating">
+                        <input type='radio' hidden name='rate' id='rating-char5' data-idx='0'>
+                        <label for='rating-char5'><span>Dở VCL</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-char4' data-idx='1'>
+                        <label for='rating-char4'><span>Hơi Dở</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-char3' data-idx='2'>
+                        <label for='rating-char3'><span>Bình Thường</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-char2' data-idx='3'>
+                        <label for='rating-char2'><span>Hơi Hay</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-char1' data-idx='4'>
+                        <label for='rating-char1'><span>Đcm HAY VCL</span></label>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div style="text-align: center;" class="text-dark fw-bold">NỘI DUNG CỐT TRUYỆN</div>
+                  <div class="form-rate">
+                    <form>
+                      <div class="rating">
+                        <input type='radio' hidden name='rate' id='rating-co1' data-idx='0'>
+                        <label for='rating-co1'><span>Dở VCL</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-co2' data-idx='1'>
+                        <label for='rating-co2'><span>Hơi Dở</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-co3' data-idx='2'>
+                        <label for='rating-co3'><span>Bình Thường</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-co4' data-idx='3'>
+                        <label for='rating-co4'><span>Hơi Hay</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-co5' data-idx='4'>
+                        <label for='rating-co5'><span>Đcm HAY VCL</span></label>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div style="text-align: center;" class="text-dark fw-bold">BỐ CỤC THẾ GIỚI</div>
+                  <div class="form-rate">
+                    <form>
+                      <div class="rating">
+                        <input type='radio' hidden name='rate' id='rating-w1' data-idx='0'>
+                        <label for='rating-w1'><span>Dở VCL</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-w2' data-idx='1'>
+                        <label for='rating-w2'><span>Hơi Dở</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-w3' data-idx='2'>
+                        <label for='rating-w3'><span>Bình Thường</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-w4' data-idx='3'>
+                        <label for='rating-w4'><span>Hơi Hay</span></label>
+
+                        <input type='radio' hidden name='rate' id='rating-w5' data-idx='4'>
+                        <label for='rating-w5'><span>Đcm HAY VCL</span></label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="review-input-block"><textarea placeholder="Đánh giá của bạn về truyện này"
+                    class="form-control rounded-2 border-0 p-3" style="height: 100px !important;"></textarea>
+                  <button type="submit"
+                    class="btn btn-submit bg-primary p-0 rounded-circle d-flex align-items-center justify-content-center text-white">
+                    <i class="fa-solid fa-share"></i></button>
+                </div>
+
+              </div>
+
+              <!-- FILTER -->
+              <div class="d-flex justify-content-end">
+                <select class="custom-select w-auto ml-auto glass">
+                  <option value="like_count">Lượt thích</option>
+                  <option value="id">Mới nhất</option>
+                </select>
+              </div>
+              <!-- END FILTER -->
+              <!-- COMMENT -->
+              <ul class="list-unstyled mt-3 mb-4 border-top">
+                <li class="mt-2 media py-3 bg-light glass border-bottom">
+                  <div class="row">
+                    <div class="col-1">
+                      <div class="mai-avatar mai-avatar--45 ms-2" style="cursor: pointer;"><img alt="" class="img-fluid"
+                          src="./img/avatar_user.jpg" lazy="loaded"> <span
+                          class="level px-1 py-0 small bg-primary rounded-3 text-white">Cấp 1</span>
+                      </div>
+                    </div>
+
+                    <div class="col-11">
+                      <div class="media-body"><a href="#" class="d-inline-block h5 mb-1">Aloha</a>
+                        <div class="d-flex align-items-center">
+                          <span class="mai-rating mai-rating--small me-2">
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                          </span>
+                          <span class="d-inline-block h5 font-weight-normal mb-0 me-4">5</span>
+                          <span class="d-flex align-items-center text- me-4 fw-light"><i
+                              class="mai-icon fa-solid fa-glasses me-2"></i> Đã đọc: 3815 chương</span>
+                          <span class="d-flex align-items-center text-tertiary"><i
+                              class="mai-icon fa-solid fa-clock me-2"></i> 2
+                            năm trước</span>
+                        </div>
+                        <div class="mt-2"><span>Ý kiến cá nhân,main yếu vc,nội dung lặp lại ko có sáng
+                            tạo,quay đi vào bí cảnh quay lại lại vào bí cảnh,ngôn từ của tác giả hơi hẹp ko biết do dịch
+                            hay
+                            tác giả viết vậy,chưa đc phong phú...</span> <span style="display: none;"><a href="#"
+                              id="readmore" class="text-muted">đọc tiếp</a> <a href="#" id="readmore" class="text-muted"
+                              style="display: none;"></a></span></div>
+                        <div class="d-flex mt-3">
+                          <div class="me-auto"><a href="#"><strong class="text-danger">Xem 2 trả
+                                lời</strong></a></div>
+                          <button
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                              class="mai-icon fa-solid fa-thumbs-up me-2"></i>10
+                          </button>
+                          <button
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                              class="mai-icon fa-solid fa-reply me-2"></i>
+                            Trả lời
+                          </button>
+                          <button data-toggle="modal"
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3"><i
+                              class="mai-icon fa-solid fa-flag me-2"></i>
+                            Báo xấu
+                          </button>
+                        </div>
+                        <ul class="list-unstyled mt-2"> </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="mt-2 media py-3 bg-light glass border-bottom">
+                  <div class="row">
+                    <div class="col-1">
+                      <div class="mai-avatar mai-avatar--45 ms-2" style="cursor: pointer;"><img alt="" class="img-fluid"
+                          src="./img/avatar_user.jpg" lazy="loaded"> <span
+                          class="level px-1 py-0 small bg-primary rounded-3 text-white">Cấp 1</span>
+                      </div>
+                    </div>
+
+                    <div class="col-11">
+                      <div class="media-body"><a href="#" class="d-inline-block h5 mb-1">Aloha</a>
+                        <div class="d-flex align-items-center">
+                          <span class="mai-rating mai-rating--small me-2">
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                          </span>
+                          <span class="d-inline-block h5 font-weight-normal mb-0 me-4">5</span>
+                          <span class="d-flex align-items-center text- me-4 fw-light"><i
+                              class="mai-icon fa-solid fa-glasses me-2"></i> Đã đọc: 3815 chương</span>
+                          <span class="d-flex align-items-center text-tertiary"><i
+                              class="mai-icon fa-solid fa-clock me-2"></i> 2
+                            năm trước</span>
+                        </div>
+                        <div class="mt-2"><span>Ý kiến cá nhân,main yếu vc,nội dung lặp lại ko có sáng
+                            tạo,quay đi vào bí cảnh quay lại lại vào bí cảnh,ngôn từ của tác giả hơi hẹp ko biết do dịch
+                            hay
+                            tác giả viết vậy,chưa đc phong phú...</span> <span style="display: none;"><a href="#"
+                              id="readmore" class="text-muted">đọc tiếp</a> <a href="#" id="readmore" class="text-muted"
+                              style="display: none;"></a></span></div>
+                        <div class="d-flex mt-3">
+                          <div class="me-auto"><a href="#"><strong class="text-danger">Xem 2 trả
+                                lời</strong></a></div>
+                          <button
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                              class="mai-icon fa-solid fa-thumbs-up me-2"></i>10
+                          </button>
+                          <button
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                              class="mai-icon fa-solid fa-reply me-2"></i>
+                            Trả lời
+                          </button>
+                          <button data-toggle="modal"
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3"><i
+                              class="mai-icon fa-solid fa-flag me-2"></i>
+                            Báo xấu
+                          </button> <!---->
+                        </div>
+                        <ul class="list-unstyled mt-2"> <!----> <!----></ul> <!---->
+                      </div>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="mt-2 media py-3 bg-light glass border-bottom">
+                  <div class="row">
+                    <div class="col-1">
+                      <div class="mai-avatar mai-avatar--45 me-3 ms-2" style="cursor: pointer;"><img alt=""
+                          class="img-fluid" src="./img/avatar_user.jpg" lazy="loaded"> <span
+                          class="level px-1 py-0 small bg-primary rounded-3 text-white">Cấp 1</span>
+                      </div>
+                    </div>
+
+                    <div class="col-11">
+                      <div class="media-body"><a href="#" class="d-inline-block h5 mb-1">Aloha</a>
+                        <div class="d-flex align-items-center">
+                          <span class="mai-rating mai-rating--small me-2">
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                            <i class="mai-icon fa-solid fa-star"></i>
+                          </span>
+                          <span class="d-inline-block h5 font-weight-normal mb-0 me-4">5</span>
+                          <span class="d-flex align-items-center text- me-4 fw-light"><i
+                              class="mai-icon fa-solid fa-glasses me-2"></i> Đã đọc: 3815 chương</span>
+                          <span class="d-flex align-items-center text-tertiary"><i
+                              class="mai-icon fa-solid fa-clock me-2"></i> 2
+                            năm trước</span>
+                        </div>
+                        <div class="mt-2"><span>Ý kiến cá nhân,main yếu vc,nội dung lặp lại ko có sáng
+                            tạo,quay đi vào bí cảnh quay lại lại vào bí cảnh,ngôn từ của tác giả hơi hẹp ko biết do dịch
+                            hay
+                            tác giả viết vậy,chưa đc phong phú...</span> <span style="display: none;"><a href="#"
+                              id="readmore" class="text-muted">đọc tiếp</a> <a href="#" id="readmore" class="text-muted"
+                              style="display: none;"></a></span></div>
+                        <div class="d-flex mt-3">
+                          <div class="me-auto"><a href="#"><strong class="text-danger">Xem 2 trả
+                                lời</strong></a></div>
+                          <button
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                              class="mai-icon fa-solid fa-thumbs-up me-2"></i>10
+                          </button>
+                          <button
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                              class="mai-icon fa-solid fa-reply me-2"></i>
+                            Trả lời
+                          </button>
+                          <button data-toggle="modal"
+                            class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3"><i
+                              class="mai-icon fa-solid fa-flag me-2"></i>
+                            Báo xấu
+                          </button> <!---->
+                        </div>
+                        <ul class="list-unstyled mt-2"> <!----> <!----></ul> <!---->
+                      </div>
+                    </div>
+                  </div>
+
+                </li>
+              </ul>
+              <!-- END COMMENT -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+
+
+            </div>
+            <div class="col-4">
+              <div class="rating-box bg-yellow-white text-primary rounded-3 p-3 glass">
+                <div class=" align-items-center py-2">
+                  <div class="fs-5 m-0 text-dark fw-bold text-center">ĐÃ CÓ 30 ĐÁNH GIÁ</div>
+                  <div class="d-flex align-items-center ms-auto justify-content-center">
+                    <span class="mai-rating text-center">
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <span class="d-block fs-6 mb-0 ml-3">(Trung Bình)</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="d-flex align-items-center justify-content-between py-2">
+                  <div class="me-2">Tính cách nhân vật</div>
+                  <div class="d-flex align-items-center ml-auto"><span class="mai-rating">
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i></span>
+                    </span>
+                    <span class="d-inline-block mb-0 ms-3">4.69</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-2">
+                  <div class="me-2">Cốt truyện</div>
+                  <div class="d-flex align-items-center ml-auto"><span class="mai-rating">
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i></span>
+                    </span>
+                    <span class="d-inline-block mb-0 ms-3">4.69</span>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-2">
+                  <div class="me-2">Bố cục thế giới</div>
+                  <div class="d-flex align-items-center ml-auto"><span class="mai-rating">
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i>
+                      <i class="mai-icon fa-solid fa-star"></i></span>
+                    </span>
+                    <span class="d-inline-block mb-0 ms-3">4.69</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="bg-yellow-white text-primary rounded-3 p-3 mt-4 glass">
+                <div class="h5 mb-4 text-dark fw-bold">Lưu ý khi đánh giá</div>
+                <p class="text-danger">1. Không được dẫn link hoặc nhắc đến website khác</p>
+                <p class="text-danger">2. Không được có những từ ngữ gay gắt, đả kích, xúc phạm người khác</p>
+                <p class="text-danger">3. Đánh giá hoặc bình luận không liên quan tới truyện sẽ bị xóa</p>
+                <p class="text-danger">4. Đánh giá hoặc bình luận chê truyện một cách chung chung không mang lại giá trị
+                  cho người đọc sẽ bị xóa</p>
+                <p class="text-danger">5. Đánh giá có điểm số sai lệch với nội dung sẽ bị xóa</p>
+                <p class="text-danger"><em>Vui lòng xem và tuân theo đầy đủ các quy định tại Điều
+                    Khoản Dịch Vụ khi sử dụng website</em></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+
+          <div class="align-items-center mb-3 mt-4">
+            <h4 class="d-inline float-left">Danh sách chương</h4>
+            <button class="btn d-inline-block btn-white ml-auto px-3" style="float: right;">
+              <i class="fa-solid fa-arrow-down-short-wide" class="mai-icon"></i>
+            </button>
+          </div>
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+          <div class="row border-bottom pb-2 d-flex justify-content-center">
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 1: Ngoại Môn Đệ Tử (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 2: Mỹ Nữ Trưởng Lão (9 năm trước)</a>
+            </div>
+            <div class="col-4 text-truncate">
+              <a href="#" class="text-dark">Chương 3: So Với Hung Thú Còn Hung Tàn hơn (9 năm)</a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="tab-pane fade" id="cmt" role="tabpanel" aria-labelledby="cmt-tab">
+
+          <div class="row mt-4">
+
+            <div class="col-8">
+              <div id="comments">
+                <div class="d-flex justify-content-between">
+                  <h4>555 bình luận</h4>
+                  <select class="custom-select">
+                    <option value="like_count">
+                      Lượt thích
+                    </option>
+                    <option value="id">
+                      Mới nhất
+                    </option>
+                    <option value="oldest">
+                      Cũ nhất
+                    </option>
+                  </select>
+                </div>
+
+                <div class="comment-form media align-items-center mt-3 d-flex">
+                  <div class="mai-avatar mai-avatar--45 mr-3" style="cursor: pointer;"><img alt="" class="img-fluid"
+                      src="./img/avatar_user.jpg" lazy="loaded"></div>
+                  <div class="review-input-block"><textarea placeholder="Đánh giá của bạn về truyện này"
+                      style="width: 630px; min-height: 66px;     border: 1px solid #000 !important;"
+                      class="ms-3 form-control rounded-2 border-0 p-3"></textarea>
+                    <button type="submit"
+                      class="btn btn-submit bg-primary border-dark p-0 rounded-circle d-flex align-items-center justify-content-center text-white">
+                      <i class="fa-solid fa-share"></i></button>
+                  </div>
+                </div>
+
+
+
+                <ul class="list-unstyled mt-3 mb-4 border-top">
+
+                  <li class="mt-2 media py-3 bg-light glass border-bottom">
+                    <div class="row">
+                      <div class="col-1">
+                        <div class="mai-avatar mai-avatar--45 me-3 ms-2" style="cursor: pointer;"><img alt=""
+                            class="img-fluid" src="./img/avatar_user.jpg" lazy="loaded"> <span
+                            class="level px-1 py-0 small bg-primary rounded-3 text-white">Cấp 1</span>
+                        </div>
+                      </div>
+
+                      <div class="col-11">
+                        <div class="media-body"><a href="#" class="d-inline-block h5 mb-1">Aloha</a>
+                          <i class="fa-solid fa-bell me-3" style="float: right;"></i>
+                          <div class="d-flex align-items-center">
+                            <span class="d-flex align-items-center text- me-4 fw-light"><i
+                                class="mai-icon fa-solid fa-glasses me-2"></i> Đã đọc: 3815 chương</span>
+                            <span class="d-flex align-items-center text-tertiary"><i
+                                class="mai-icon fa-solid fa-clock me-2"></i> 2 năm trước</span>
+                          </div>
+                          <div class="mt-2"><span>Ý kiến cá nhân,main yếu vc,nội dung lặp lại ko có sáng
+                              tạo,quay đi vào bí cảnh quay lại lại vào bí cảnh,ngôn từ của tác giả hơi hẹp ko biết do
+                              dịch
+                              hay tác giả viết vậy,chưa đc phong phú...</span> <span style="display: none;"><a href="#"
+                                id="readmore" class="text-muted">đọc tiếp</a> <a href="#" id="readmore"
+                                class="text-muted" style="display: none;"></a></span></div>
+                          <div class="d-flex mt-3">
+                            <div class="me-auto"><a href="#"><strong class="text-danger">Xem 2 trả
+                                  lời</strong></a></div>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-thumbs-up me-2"></i>10
+                            </button>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-reply me-2"></i>
+                              Trả lời
+                            </button>
+                            <button data-toggle="modal"
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3"><i
+                                class="mai-icon fa-solid fa-flag me-2"></i>
+                              Báo xấu
+                            </button> <!---->
+                          </div>
+                          <ul class="list-unstyled mt-2"> <!----> <!----></ul> <!---->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="mt-2 media py-3 bg-light glass border-bottom">
+                    <div class="row">
+                      <div class="col-1">
+                        <div class="mai-avatar mai-avatar--45 me-3 ms-2" style="cursor: pointer;"><img alt=""
+                            class="img-fluid" src="./img/avatar_user.jpg" lazy="loaded"> <span
+                            class="level px-1 py-0 small bg-primary rounded-3 text-white">Cấp 1</span>
+                        </div>
+                      </div>
+
+                      <div class="col-11">
+                        <div class="media-body"><a href="#" class="d-inline-block h5 mb-1">Aloha</a>
+                          <i class="fa-solid fa-bell me-3" style="float: right;"></i>
+                          <div class="d-flex align-items-center">
+                            <span class="d-flex align-items-center text- me-4 fw-light"><i
+                                class="mai-icon fa-solid fa-glasses me-2"></i> Đã đọc: 3815 chương</span>
+                            <span class="d-flex align-items-center text-tertiary"><i
+                                class="mai-icon fa-solid fa-clock me-2"></i> 2 năm trước</span>
+                          </div>
+                          <div class="mt-2"><span>Ý kiến cá nhân,main yếu vc,nội dung lặp lại ko có sáng
+                              tạo,quay đi vào bí cảnh quay lại lại vào bí cảnh,ngôn từ của tác giả hơi hẹp ko biết do
+                              dịch
+                              hay tác giả viết vậy,chưa đc phong phú...</span> <span style="display: none;"><a href="#"
+                                id="readmore" class="text-muted">đọc tiếp</a> <a href="#" id="readmore"
+                                class="text-muted" style="display: none;"></a></span></div>
+                          <div class="d-flex mt-3">
+                            <div class="me-auto"><a href="#"><strong class="text-danger">Xem 2 trả
+                                  lời</strong></a></div>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-thumbs-up me-2"></i>10
+                            </button>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-reply me-2"></i>
+                              Trả lời
+                            </button>
+                            <button data-toggle="modal"
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3"><i
+                                class="mai-icon fa-solid fa-flag me-2"></i>
+                              Báo xấu
+                            </button> <!---->
+                          </div>
+                          <ul class="list-unstyled mt-2"> <!----> <!----></ul> <!---->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="mt-2 media py-3 bg-light glass border-bottom">
+                    <div class="row">
+                      <div class="col-1">
+                        <div class="mai-avatar mai-avatar--45 me-3 ms-2" style="cursor: pointer;"><img alt=""
+                            class="img-fluid" src="./img/avatar_user.jpg" lazy="loaded"> <span
+                            class="level px-1 py-0 small bg-primary rounded-3 text-white">Cấp 1</span>
+                        </div>
+                      </div>
+
+                      <div class="col-11">
+                        <div class="media-body"><a href="#" class="d-inline-block h5 mb-1">Aloha</a>
+                          <i class="fa-solid fa-bell me-3" style="float: right;"></i>
+                          <div class="d-flex align-items-center">
+                            <span class="d-flex align-items-center text- me-4 fw-light"><i
+                                class="mai-icon fa-solid fa-glasses me-2"></i> Đã đọc: 3815 chương</span>
+                            <span class="d-flex align-items-center text-tertiary"><i
+                                class="mai-icon fa-solid fa-clock me-2"></i> 2 năm trước</span>
+                          </div>
+                          <div class="mt-2"><span>Ý kiến cá nhân,main yếu vc,nội dung lặp lại ko có sáng
+                              tạo,quay đi vào bí cảnh quay lại lại vào bí cảnh,ngôn từ của tác giả hơi hẹp ko biết do
+                              dịch
+                              hay tác giả viết vậy,chưa đc phong phú...</span> <span style="display: none;"><a href="#"
+                                id="readmore" class="text-muted">đọc tiếp</a> <a href="#" id="readmore"
+                                class="text-muted" style="display: none;"></a></span></div>
+                          <div class="d-flex mt-3">
+                            <div class="me-auto"><a href="#"><strong class="text-danger">Xem 2 trả
+                                  lời</strong></a></div>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-thumbs-up me-2"></i>10
+                            </button>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-reply me-2"></i>
+                              Trả lời
+                            </button>
+                            <button data-toggle="modal"
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3"><i
+                                class="mai-icon fa-solid fa-flag me-2"></i>
+                              Báo xấu
+                            </button> <!---->
+                          </div>
+                          <ul class="list-unstyled mt-2"> <!----> <!----></ul> <!---->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="mt-2 media py-3 bg-light glass border-bottom">
+                    <div class="row">
+                      <div class="col-1">
+                        <div class="mai-avatar mai-avatar--45 me-3 ms-2" style="cursor: pointer;"><img alt=""
+                            class="img-fluid" src="./img/avatar_user.jpg" lazy="loaded"> <span
+                            class="level px-1 py-0 small bg-primary rounded-3 text-white">Cấp 1</span>
+                        </div>
+                      </div>
+
+                      <div class="col-11">
+                        <div class="media-body"><a href="#" class="d-inline-block h5 mb-1">Aloha</a>
+                          <i class="fa-solid fa-bell me-3" style="float: right;"></i>
+                          <div class="d-flex align-items-center">
+                            <span class="d-flex align-items-center text- me-4 fw-light"><i
+                                class="mai-icon fa-solid fa-glasses me-2"></i> Đã đọc: 3815 chương</span>
+                            <span class="d-flex align-items-center text-tertiary"><i
+                                class="mai-icon fa-solid fa-clock me-2"></i> 2 năm trước</span>
+                          </div>
+                          <div class="mt-2"><span>Ý kiến cá nhân,main yếu vc,nội dung lặp lại ko có sáng
+                              tạo,quay đi vào bí cảnh quay lại lại vào bí cảnh,ngôn từ của tác giả hơi hẹp ko biết do
+                              dịch
+                              hay tác giả viết vậy,chưa đc phong phú...</span> <span style="display: none;"><a href="#"
+                                id="readmore" class="text-muted">đọc tiếp</a> <a href="#" id="readmore"
+                                class="text-muted" style="display: none;"></a></span></div>
+                          <div class="d-flex mt-3">
+                            <div class="me-auto"><a href="#"><strong class="text-danger">Xem 2 trả
+                                  lời</strong></a></div>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-thumbs-up me-2"></i>10
+                            </button>
+                            <button
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3 me-2"><i
+                                class="mai-icon fa-solid fa-reply me-2"></i>
+                              Trả lời
+                            </button>
+                            <button data-toggle="modal"
+                              class="btn btn-sm btn-white fz-body text-tertiary rounded-3 d-flex align-items-center px-3"><i
+                                class="mai-icon fa-solid fa-flag me-2"></i>
+                              Báo xấu
+                            </button> <!---->
+                          </div>
+                          <ul class="list-unstyled mt-2"> <!----> <!----></ul> <!---->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="text-center mt-4 mb-4"><a class="btn btn-outline-secondary cursor-pointer">
+                  Xem thêm bình luận</a></div>
+            </div>
+
+            <div class="col-4">
+              <div>
+                <div class="glass"><a href="https://vtruyen.com/truyen/thuong-sinh-giang-dao" target="_blank"><img
+                      src="https://static.cdnno.com/storage/topbox/aa04e47df327dca709cf7870a9ee17a6.jpg"
+                      alt="Thương Sinh Giang Đạo" class="img-fluid"></a></div>
+              </div>
+              <hr class="my-3">
+              <div>
+                <div class="glass"><a href="https://vtruyen.com/truyen/ta-dao-ngoan-nhan" target="_blank"><img
+                      src="https://static.cdnno.com/storage/topbox/e17fda75b738e9237938894485cab478.jpg"
+                      alt="Vạn Biến Hồn Đế" class="img-fluid"></a></div>
+              </div>
+              <hr class="my-3">
+              <div>
+                <div class="glass"><a href="https://metruyencv.com/truyen/cau-tai-di-gioi-thanh-vo-thanh"
+                    target="_blank"><img
+                      src="https://static.cdnno.com/storage/topbox/c289e0a704de7d00f948e763845cb311.jpg"
+                      alt="Cẩu Tại Dị Giới Thành Võ Thánh" class="img-fluid"></a></div>
+              </div>
+              <hr class="my-3">
+              <div>
+                <div class="glass"><a href="https://vtruyen.com/truyen/tong-man-the-gamer" target="_blank"><img
+                      src="https://static.cdnno.com/storage/topbox/fcf1759f936dfca7c92486b3cfe753bb.jpg"
+                      alt="Tổng Mạn: The Gamer" class="img-fluid"></a></div>
+              </div>
+              <hr class="my-3">
+            </div>
+
+          </div>
+
+        </div>
+        <!-- END NAV TABS -->
+        </div>
+        </div>
+        <!-- END CONTENT -->
+        <div id="footer" class="pt-5 border-top">
+          <div class="container text-center">
+            <a href="#"><img src="./img/avatar_user.jpg" height="50px" alt="" /></a>
+            <p class="content_footer">Truyện Quá Dài! Đéo Đọc</p>
+            <div class="content_footer">
+              <a href="#" class="text-dark text-decoration-none p-2">Điều khoản dịch vụ</a>
+              <a href="#" class="text-dark text-decoration-none p-2">Chính sách bảo mật</a>
+              <a href="#" class="text-dark text-decoration-none p-2">Về bản quyền</a>
+              <a href="#" class="text-dark text-decoration-none p-2">Hướng dẫn sử dụng</a>
+            </div>
+          </div>
+        </div>
+        <!-- END FOOTER -->
+        
+</body>
+
+
+</html>

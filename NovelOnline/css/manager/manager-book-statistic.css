@@ -1,0 +1,224 @@
+:root {
+  --hover-color: #0e8388;
+}
+
+html {
+  background-color: #212525;
+  min-height: 770px;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  /* background-image: url(https://img5.thuthuatphanmem.vn/uploads/2021/11/26/hinh-nen-phong-canh-co-trang-cho-may-tinh_010559903.jpg);
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed; */
+  background-color: #212525 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.page-active {
+  background-color: #ffffff50;
+  color: #fff;
+}
+
+.logo-image {
+  margin-right: 10px;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  background-color: #2c3333e5;
+  justify-content: space-between !important;
+  padding: 0px 20px !important;
+}
+
+.main-nav .logo {
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+.main-nav .logo span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-nav .left-bar {
+  position: absolute;
+  left: 0;
+  margin-top: 60px;
+  background-color: #212525;
+  color: #ffffff6e;
+  min-height: 600px;
+  min-width: 250px;
+}
+
+.left-bar .control li {
+  padding: 20px 50px 20px 20px;
+  border-bottom: 1px solid #ffffff6e;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.control .nav-link i {
+  margin-right: 10px;
+}
+
+.control li:hover {
+  color: #ffffffce;
+}
+
+.left-bar .control li:last-child {
+  border: none;
+}
+
+.head-bar {
+  color: #ffffffd2;
+  font-size: 20px;
+  margin: auto;
+  margin-right: 50px;
+}
+
+.head-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.head-bar ul li {
+  padding: 15px 20px;
+}
+
+.head-bar .home {
+  margin-right: 15px;
+}
+
+.head-bar a:hover {
+  color: #ffffff88;
+}
+
+main {
+  margin-left: 250px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+main .directory {
+  font-size: 20px;
+  background-color: #f1dec9;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  color: #212525d7;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.head{
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.head div:not(:first-child){
+  text-align: center;
+}
+
+.head-book, .book-detail{
+  width: 20% !important;
+}
+
+.book{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.book:nth-child(2n){
+  background-color: #21252509;
+}
+
+.book-detail{
+  display: flex;
+}
+
+.book-detail .book-image{
+  margin-right: 20px;
+}
+
+.book-detail .book-information{
+  width: 100%;
+  text-align: left;
+}
+
+.book-detail .book-information .book-name{
+  font-size: 15px;
+  font-weight: 500;
+  height: 23px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-detail .book-information .book-author{
+  width: 100%;
+  height: 21px;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.book-detail .book-information .book-author i{
+  font-size: 12px;
+}
+
+.book-detail .book-information .book-type{
+  margin-top: 7px;
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 11px;
+  color: #ac8355;
+  border: 1px solid #ac8355;
+}
+
+.book .action-button{
+  width: 15%;
+}
+
+.book .action-button .button{
+  background-color: #2C3333;
+  color: #fff;
+  opacity: 0.8;
+  padding: 6px 10px;
+  border-radius: 7px;
+}
+
+.book .book-revenue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency{
+  width: 20px;
+  margin-left: 5px;
+}

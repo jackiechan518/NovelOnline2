@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/ranking.css" />
+    <script src="./js/jquery-3.6.3.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'
+    />
+    <link rel="stylesheet" href="./swiper.css" />
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <div class="menu container px-3">
+          <a href="#"><img src="./img/logo2.png" height="50px" alt="" /></a>
+          <div class="left-nav">
+            <div class="category">
+              <div class="title">
+                Thể loại
+                <i class="fa-solid fa-caret-down icon-category"></i>
+              </div>
+              <ul class="sub-menu sub-menu-category">
+                <li><a href="#">Tất Cả</a></li>
+                <li><a href="">Huyền Huyễn</a></li>
+                <li><a href="">Võng Du</a></li>
+                <li><a href="">Đồng Nhân</a></li>
+                <li><a href="">Cạnh Kỹ</a></li>
+                <li><a href="">Kiếm Hiệp</a></li>
+                <li><a href="">Tiên Hiệp</a></li>
+                <li><a href="">Khoan Huyễn</a></li>
+                <li><a href="">Đô Thị</a></li>
+                <li><a href="">Dã Sử</a></li>
+                <li><a href="">Huyền Nghi</a></li>
+                <li><a href="">Kì Ảo</a></li>
+              </ul>
+            </div>
+            <div class="rank">
+              <div class="title">
+                <a href="#">
+                  Bảng xếp hạng
+                  <i class="fa-solid fa-caret-down icon-category"></i>
+                </a>
+              </div>
+              <ul class="sub-menu sub-menu-rank">
+                <li><a href="#">Thịnh Hành</a></li>
+                <li><a href="#">Đọc Nhiều</a></li>
+                <li><a href="#">Tặng Thưởng</a></li>
+                <li><a href="#">Đề Cử</a></li>
+                <li><a href="#">Yêu Thích</a></li>
+                <li><a href="#">Thảo Luận</a></li>
+              </ul>
+            </div>
+          </div>
+          <form action="" id="search-box">
+            <input type="text" id="search-text" />
+            <button id="search-btn">
+              <i class="fa-solid fa-magnifying-glass icon-search"></i>
+            </button>
+          </form>
+          <div class="action">
+            <a href="" class="register">Đăng ký</a>
+            <a href="" class="login">Đăng nhập</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- END HEADER -->
+    <div id="wp-content">
+      <!-- SLIDER -->
+      <div class="background">
+        <img
+          src="./img/background_user_fix.jpg"
+          class="background_image"
+          alt="anhbia1"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="rank-type">
+              <div class="type active">
+                <i class="fa-regular fa-thumbs-up"></i>Yêu thích
+              </div>
+              <div class="type">
+                <i class="fa-regular fa-comment"></i>Bình Luận
+              </div>
+              <div class="type"><i class="fa-regular fa-eye"></i>Lượt xem</div>
+              <div class="type"><i class="fa-solid fa-book"></i>Cất giữ</div>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="book">
+              <div class="book-image">
+                <a href=""><img src="./img/avatar.jpg" alt="" /></a>
+              </div>
+              <div class="book-information">
+                <div class="book-name"><a href="">Đế Bá</a></div>
+                <div class="book-description">
+                  Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                  Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                  chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                  cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                  Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                  Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                  dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                  Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                </div>
+                <div class="book-foot">
+                  <div class="book-author">
+                    <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                  </div>
+                  <div class="book-statistic">
+                    <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                  </div>
+                  <div class="book-type">Huyền Huyễn</div>
+                </div>
+              </div>
+            </div>
+            <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <img src="./img/avatar.jpg" alt="" />
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="book">
+                <div class="book-image">
+                  <a href=""><img src="./img/avatar.jpg" alt="" /></a>
+                </div>
+                <div class="book-information">
+                  <div class="book-name">Đế Bá</div>
+                  <div class="book-description">
+                    Ngàn vạn năm trước, Lý Thất Dạ trồng xuống một cây Thúy
+                    Trúc.Tám trăm vạn năm trước, Lý Thất Dạ nuôi một đầu cá
+                    chép.Năm trăm vạn năm trước, Lý Thất Dạ thu dưỡng một cái tiểu
+                    cô nương ... ... ...Hôm nay, Lý Thất Dạ tỉnh lại sau giấc ngủ,
+                    Thúy Trúc tu luyện thành thần linh, cá chép hóa thành Kim
+                    Long, tiểu cô nương trở thành Cửu Giới Nữ Đế. Đây là một cái
+                    dưỡng thành cố sự, một cái bất tử Nhân tộc tiểu tử dưỡng thành
+                    Yêu Thần, dưỡng thành Tiên thú, dưỡng thành Nữ Đế cố sự.
+                  </div>
+                  <div class="book-foot">
+                    <div class="book-author">
+                      <i class="fa-solid fa-user-pen"></i>Yếm Bút Tiêu Sinh
+                    </div>
+                    <div class="book-statistic">
+                      <div class="like"><i class="fa-regular fa-thumbs-up"></i></div>1000
+                    </div>
+                    <div class="book-type">Huyền Huyễn</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SLIDER -->
+    <script src="./js/homepage.js"></script>
+  </body>
+</html>

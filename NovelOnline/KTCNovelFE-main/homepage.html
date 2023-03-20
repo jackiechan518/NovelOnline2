@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/jquery-3.6.3.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'
+    />
+    <link rel="stylesheet" href="./swiper.css" />
+
+    <title>Ngọa Hổ Tàng Thư Các</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <nav>
+          <div class="menu container px-3">
+            <a href="#"><img src="./img/logo2.png" height="50px" alt="" /></a>
+            <div class="left-nav">
+              <div class="category">
+                <div class="title">
+                  Thể loại
+                  <i class="fa-solid fa-caret-down icon-category"></i>
+                </div>
+                <ul class="sub-menu sub-menu-category">
+                  <li><a href="#">Tất Cả</a></li>
+                  <li><a href="">Huyền Huyễn</a></li>
+                  <li><a href="">Võng Du</a></li>
+                  <li><a href="">Đồng Nhân</a></li>
+                  <li><a href="">Cạnh Kỹ</a></li>
+                  <li><a href="">Kiếm Hiệp</a></li>
+                  <li><a href="">Tiên Hiệp</a></li>
+                  <li><a href="">Khoan Huyễn</a></li>
+                  <li><a href="">Đô Thị</a></li>
+                  <li><a href="">Dã Sử</a></li>
+                  <li><a href="">Huyền Nghi</a></li>
+                  <li><a href="">Kì Ảo</a></li>
+                </ul>
+              </div>
+              <div class="rank">
+                <div class="title">
+                  <a href="#">
+                    Bảng xếp hạng
+                    <i class="fa-solid fa-caret-down icon-category"></i>
+                  </a>
+                </div>
+                <ul class="sub-menu sub-menu-rank">
+                  <li><a href="#">Thịnh Hành</a></li>
+                  <li><a href="#">Đọc Nhiều</a></li>
+                  <li><a href="#">Tặng Thưởng</a></li>
+                  <li><a href="#">Đề Cử</a></li>
+                  <li><a href="#">Yêu Thích</a></li>
+                  <li><a href="#">Thảo Luận</a></li>
+                </ul>
+              </div>
+            </div>
+            <form action="" id="search-box">
+              <input type="text" id="search-text" />
+              <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+              </button>
+            </form>
+            <div class="post-book">
+              <a href="">
+                <i class="fa-regular fa-hexagon-plus"></i>
+                Đăng truyện
+              </a>
+            </div>
+            <div class="action">
+              <a href="" class="register">Đăng ký</a>
+              <a href="" class="login">Đăng nhập</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- END HEADER -->
+      <div id="wp-content">
+        <!-- SLIDER -->
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#"
+                ><img src="./img/bia1.jpg" class="d-block w-100" alt="anhbia1"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"
+                ><img src="./img/bia2.jpg" class="d-block w-100" alt="anhbia2"
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"
+                ><img src="./img/bia3.jpg" class="d-block w-100" alt="anhbia3"
+              /></a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- END SLIDER -->
+
+        <!-- MENTION READING -->
+        <div class="container" id="mention_reading">
+          <div class="row p-4 mt-4 glass">
+            <!-- CONTENT MENTION -->
+            <div class="col-8" id="mention">
+              <h5 class="d-inline">Biên tập viên đề cử</h5>
+              <div class="row mention_row">
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention">Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention mb-0"> Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mention_row">
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention mb-0"> Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention mb-0"> Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mention_row">
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention mb-0"> Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention mb-0"> Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mention_row">
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention mb-0"> Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-flex mention_col">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="80"
+                      height="100"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <p class="des_mention" style="max-width: 250px">
+                      Ta bản tha hương khách, vô ý thành tiên....Thâm sơn tu đạo
+                      hai mươi năm, sư phụ để Tống Du xuống núi, tới kiến thức
+                      yêu ma quỷ quái, nhân sinh thái độ khác nhau, đi tìm thăm
+                      danh sơn đại xuyên, trong truyền thuyết tiên, nói đây mới
+                      thực sự là tu hành.Không nghĩ tới, đi khắp đại giang nam
+                      bắc, tiên nhân đúng là chính ta.
+                    </p>
+                    <div class="author_mention">
+                      <a href="#" class="name_author_mention"
+                        ><i class="fa-solid fa-user"></i> Kim Sắc Mạt Lỵ</a
+                      >
+                      <br />
+                      <a href="#" class="type_mention mb-0"> Huyền Huyễn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END CONTENT MENTION -->
+            </div>
+            <!-- CONTENT READING -->
+            <div class="col-4" id="reading">
+              <h5 class="d-inline">Đang đọc</h5>
+              <a href="">
+                <h6 class="float-end text-dark view_all">Xem tất cả</h6>
+              </a>
+              <div class="rate_row row mt-4">
+                <div class="content_had_read d-flex">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="35"
+                      height="50"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Ta không hề cố ý thành tiên</a
+                    >
+                    <div class="had_read">
+                      <div class="had_read_yet">
+                        Đã đọc:
+                        <span class="number_read me-2">1</span>
+                        <a href="#" class="delete_read"
+                          ><i class="fa-solid fa-trash-can text-dark"></i
+                        ></a>
+                      </div>
+                      <div class="continue">
+                        <a
+                          href="#"
+                          class="continue_read text-decoration-none float-end text-dark"
+                          >Đọc tiếp</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rate_row row mt-4">
+                <div class="content_had_read d-flex">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="35"
+                      height="50"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Toàn Cầu Lãnh Chúa: Bắt Đầu Trở Thành Sa Mạc Lãnh Chúa</a
+                    >
+                    <div class="had_read">
+                      <div class="had_read_yet">
+                        Đã đọc:
+                        <span class="number_read me-2">1</span>
+                        <a href="#" class="delete_read"
+                          ><i class="fa-solid fa-trash-can text-dark"></i
+                        ></a>
+                      </div>
+                      <div class="continue">
+                        <a
+                          href="#"
+                          class="continue_read text-decoration-none float-end text-dark"
+                          >Đọc tiếp</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rate_row row mt-4">
+                <div class="content_had_read d-flex">
+                  <a href="#"
+                    ><img
+                      src="./img/avatar.jpg"
+                      alt=""
+                      class="avatar_mention"
+                      width="35"
+                      height="50"
+                  /></a>
+                  <div class="wp_content_mention ms-3">
+                    <a href="#" class="title_mention"
+                      >Công Pháp Bị Phá Mất, Ta Càng Mạnh Hơn</a
+                    >
+                    <div class="had_read">
+                      <div class="had_read_yet">
+                        Đã đọc:
+                        <span class="number_read me-2">1</span>
+                        <a href="#" class="delete_read"
+                          ><i class="fa-solid fa-trash-can text-dark"></i
+                        ></a>
+                      </div>
+                      <div class="continue">
+                        <a
+                          href="#"
+                          class="continue_read text-decoration-none float-end text-dark"
+                          >Đọc tiếp</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+              <!-- GUIDE -->
+              <h5 class="d-inline">Hướng dẫn</h5>
+              <a href="">
+                <h6 class="float-end text-dark view_all">Xem tất cả</h6>
+              </a>
+              <ul class="guide" style="padding-left: 1.2rem">
+                <li class="mb-2">
+                  <a href="#" class="text-dark text-decoration-none">
+                    Làm sao đổi màu nền, cỡ chữ, font chữ
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-dark text-decoration-none">
+                    Làm sao đổi màu nền, cỡ chữ, font chữ
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-dark text-decoration-none">
+                    Làm sao đổi màu nền, cỡ chữ, font chữ
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-dark text-decoration-none">
+                    Làm sao đổi màu nền, cỡ chữ, font chữ
+                  </a>
+                </li>
+              </ul>
+              <!-- END GUIDE -->
+            </div>
+            <!-- END CONTENT READING -->
+          </div>
+          <!-- END CONTENT READING -->
+        </div>
+        <!-- END MENTION READING -->
+
+        <!-- NEW UPDATE -->
+        <div id="new_update" class="mt-5">
+          <div class="container">
+            <div class="new_update_head">
+              <h5 class="d-inline">Mới cập nhật</h5>
+              <a href="">
+                <h6 class="float-end text-dark view_all">Xem tất cả</h6>
+              </a>
+            </div>
+            <div class="table_new_update">
+              <table class="table table-borderless table-hover">
+                <tbody class="text-center">
+                  <tr>
+                    <th scope="row" class="type">Võng Du</th>
+                    <td class="name">
+                      <a href="#"
+                        >Vô Địch Từ Ta Nhìn Thấy BOSS Thanh Máu Bắt Đầu</a
+                      >
+                    </td>
+                    <td class="chapter">
+                      <a href="#"
+                        >Chương 50: Cẩm Châu thành gặp đồng hành, tên của ngươi
+                        không dùng được.</a
+                      >
+                    </td>
+                    <td class="author">
+                      <span>Ngã Dã Ngận Tuyệt Vọng</span>
+                    </td>
+                    <td class="poster"><span>Huyền Linh</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="type">Võng Du</th>
+                    <td class="name">
+                      <a href="#"
+                        >Vô Địch Từ Ta Nhìn Thấy BOSS Thanh Máu Bắt Đầu</a
+                      >
+                    </td>
+                    <td class="chapter">
+                      <a href="#"
+                        >Chương 50: Cẩm Châu thành gặp đồng hành, tên của ngươi
+                        không dùng được.</a
+                      >
+                    </td>
+                    <td class="author">
+                      <span>Ngã Dã Ngận Tuyệt Vọng</span>
+                    </td>
+                    <td class="poster"><span>Huyền Linh</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="type">Võng Du</th>
+                    <td class="name">
+                      <a href="#"
+                        >Vô Địch Từ Ta Nhìn Thấy BOSS Thanh Máu Bắt Đầu</a
+                      >
+                    </td>
+                    <td class="chapter">
+                      <a href="#"
+                        >Chương 50: Cẩm Châu thành gặp đồng hành, tên của ngươi
+                        không dùng được.</a
+                      >
+                    </td>
+                    <td class="author">
+                      <span>Ngã Dã Ngận Tuyệt Vọng</span>
+                    </td>
+                    <td class="poster"><span>Huyền Linh</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="type">Võng Du</th>
+                    <td class="name">
+                      <a href="#"
+                        >Vô Địch Từ Ta Nhìn Thấy BOSS Thanh Máu Bắt Đầu</a
+                      >
+                    </td>
+                    <td class="chapter">
+                      <a href="#"
+                        >Chương 50: Cẩm Châu thành gặp đồng hành, tên của ngươi
+                        không dùng được.</a
+                      >
+                    </td>
+                    <td class="author">
+                      <span>Ngã Dã Ngận Tuyệt Vọng</span>
+                    </td>
+                    <td class="poster"><span>Huyền Linh</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="type">Võng Du</th>
+                    <td class="name">
+                      <a href="#"
+                        >Vô Địch Từ Ta Nhìn Thấy BOSS Thanh Máu Bắt Đầu</a
+                      >
+                    </td>
+                    <td class="chapter">
+                      <a href="#"
+                        >Chương 50: Cẩm Châu thành gặp đồng hành, tên của ngươi
+                        không dùng được.</a
+                      >
+                    </td>
+                    <td class="author">
+                      <span>Ngã Dã Ngận Tuyệt Vọng</span>
+                    </td>
+                    <td class="poster"><span>Huyền Linh</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="type">Võng Du</th>
+                    <td class="name">
+                      <a href="#"
+                        >Vô Địch Từ Ta Nhìn Thấy BOSS Thanh Máu Bắt Đầu</a
+                      >
+                    </td>
+                    <td class="chapter">
+                      <a href="#"
+                        >Chương 50: Cẩm Châu thành gặp đồng hành, tên của ngươi
+                        không dùng được.</a
+                      >
+                    </td>
+                    <td class="author">
+                      <span>Ngã Dã Ngận Tuyệt Vọng</span>
+                    </td>
+                    <td class="poster"><span>Huyền Linh</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="type">Võng Du</th>
+                    <td class="name">
+                      <a href="#"
+                        >Vô Địch Từ Ta Nhìn Thấy BOSS Thanh Máu Bắt Đầu</a
+                      >
+                    </td>
+                    <td class="chapter">
+                      <a href="#"
+                        >Chương 50: Cẩm Châu thành gặp đồng hành, tên của ngươi
+                        không dùng được.</a
+                      >
+                    </td>
+                    <td class="author">
+                      <span>Ngã Dã Ngận Tuyệt Vọng</span>
+                    </td>
+                    <td class="poster"><span>Huyền Linh</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- END NEW UPDATE -->
+
+        <!-- RANKING -->
+        <div id="ranking" class="ranking">
+          <div class="container">
+            <div
+              class="row d-flex justify-content-center"
+              style="justify-content: space-between !important"
+            >
+              <!-- MOST READ -->
+              <div class="col-4 p-3 glass" id="most_read" style="width: 32%">
+                <div class="ranking_header">
+                  <h5 class="d-inline">Đọc nhiều</h5>
+                  <a href="#">
+                    <h6 class="float-end text-dark view_all d-inline">
+                      Xem tất cả
+                    </h6>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top1.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#">Vạn cổ thần đế</a>
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top2.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#"
+                        >Địa Phủ Đánh Dấu Ngàn Năm, Đầu Thai Khí Khóc Nữ Đế</a
+                      >
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top3.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#"
+                        >Ta Hôn Quân, Bắt Đầu Đưa Giang Sơn, Thành Thiên Cổ Nhất
+                        Đế</a
+                      >
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- END MOST READ -->
+
+              <!-- MOST POPULAR -->
+              <div class="col-4 p-3 glass" id="most_common" style="width: 32%">
+                <div class="ranking_header">
+                  <h5 class="d-inline">Thích nhiều</h5>
+                  <a href="#">
+                    <h6 class="float-end text-dark view_all d-inline">
+                      Xem tất cả
+                    </h6>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top1.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#">Vạn cổ thần đế</a>
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top2.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#"
+                        >Địa Phủ Đánh Dấu Ngàn Năm, Đầu Thai Khí Khóc Nữ Đế</a
+                      >
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top3.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#"
+                        >Ta Hôn Quân, Bắt Đầu Đưa Giang Sơn, Thành Thiên Cổ Nhất
+                        Đế</a
+                      >
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- END POPULAR -->
+              <div class="col-4 p-3 glass" id="suggest" style="width: 32%">
+                <div class="ranking_header">
+                  <h5 class="d-inline">Cất giữ nhiều</h5>
+                  <a href="#">
+                    <h6 class="float-end text-dark view_all d-inline">
+                      Xem tất cả
+                    </h6>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top1.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#">Vạn cổ thần đế</a>
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top2.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#"
+                        >Địa Phủ Đánh Dấu Ngàn Năm, Đầu Thai Khí Khóc Nữ Đế</a
+                      >
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+                <div class="wp_all_rank d-flex mt-3 mb-4">
+                  <div class="rank_top">
+                    <img
+                      src="./img/top3.png"
+                      alt=""
+                      width="50px"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="wp_rank_content">
+                    <div class="rank_title truncate">
+                      <a href="#"
+                        >Ta Hôn Quân, Bắt Đầu Đưa Giang Sơn, Thành Thiên Cổ Nhất
+                        Đế</a
+                      >
+                    </div>
+                    <div class="rank_view">
+                      <i class="fa-solid fa-eye"></i
+                      ><a
+                        href="#"
+                        class="rank_view_content m-2 text-decoration-none text-dark"
+                        >192,326</a
+                      >
+                    </div>
+                    <div class="rank_author">
+                      <i class="fa-solid fa-user-pen"></i
+                      ><a
+                        href="#"
+                        class="rank_author_content m-2 text-decoration-none text-dark"
+                        >Phi Thiên Thư</a
+                      >
+                    </div>
+                    <div class="rank_type">
+                      <i class="fa-solid fa-tag"></i
+                      ><a
+                        href="#"
+                        class="rank_type_content m-2 text-decoration-none text-dark"
+                        >Huyền Huyễn</a
+                      >
+                    </div>
+                  </div>
+                  <a class="book-container" href="#" target="_blank">
+                    <div class="book">
+                      <img alt="..." src="./img/most.jpg" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- SUGGEST -->
+
+              <!-- END SUGGEST -->
+            </div>
+          </div>
+        </div>
+        <!-- END RANKING -->
+        <!-- SWIPER -->
+        <div class="container text-center newest">
+          <h5 style="font-size: 40px">MỚI ĐĂNG</h5>
+          <h6>
+            <a href="#" class="view_all text-decoration-none text-dark"
+              >Xem Tất Cả</a
+            >
+          </h6>
+        </div>
+        <div class="swiper" style="height: 507px">
+          <div class="app">
+            <div class="cardList">
+              <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                  <svg>
+                    <use xlink:href="#arrow-left"></use>
+                  </svg>
+                </div>
+              </button>
+
+              <div class="cards__wrapper">
+                <div class="card current--card">
+                  <div class="card__image">
+                    <a href="#">
+                      <img src="./img/swiper1.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card next--card">
+                  <div class="card__image">
+                    <a href="#">
+                      <img src="./img/swiper2.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card previous--card">
+                  <div class="card__image">
+                    <a href="#">
+                      <img src="./img/swiper3.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                  <svg>
+                    <use xlink:href="#arrow-right"></use>
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+            <div class="infoList">
+              <div class="info__wrapper">
+                <div class="info current--info">
+                  <h1 class="text name">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Tàn Phế</a
+                    >
+                  </h1>
+                  <h4 class="text location">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Tàn Phế</a
+                    >
+                  </h4>
+                  <p class="text description">
+                    <a href="#" class="text-decoration-none text-white"
+                      >Tàn Phế anhwsdojhaoiwjoied ahjdiojqwaoijed waueoid
+                      ahsdoxuihjawsiuoxhjawiouejh hauiowsdhawiuo
+                      shjdiuoawhawiudhwsaui hdwiauhduiwahui</a
+                    >
+                  </p>
+                </div>
+
+                <div class="info next--info">
+                  <h1 class="text name">Machu Pichu</h1>
+                  <h4 class="text location">Peru</h4>
+                  <p class="text description">Adventure is never far away</p>
+                </div>
+
+                <div class="info previous--info">
+                  <h1 class="text name">Chamonix</h1>
+                  <h4 class="text location">France</h4>
+                  <p class="text description">Let your dreams come true</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="app__bg">
+              <div class="app__bg__image current--image">
+                <img src="./img/swiper1.jpg" alt="" />
+              </div>
+              <div class="app__bg__image next--image">
+                <img src="./img/swiper2.jpg" alt="" />
+              </div>
+              <div class="app__bg__image previous--image">
+                <img src="./img/swiper3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="loading__wrapper">
+            <div class="loader--text">Loading...</div>
+            <div class="loader">
+              <span></span>
+            </div>
+          </div>
+
+          <svg class="icons" style="display: none">
+            <symbol
+              id="arrow-left"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fs-20"
+              viewBox="0 0 512 512"
+            >
+              <polyline
+                points="328 112 184 256 328 400"
+                style="
+                  fill: none;
+                  stroke: #fff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 48px;
+                "
+              />
+            </symbol>
+            <symbol
+              id="arrow-right"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <polyline
+                points="184 112 328 256 184 400"
+                style="
+                  fill: none;
+                  stroke: #fff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 48px;
+                "
+              />
+            </symbol>
+          </svg>
+
+          <!-- partial -->
+          <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+          <script src="./script.js"></script>
+        </div>
+        <!-- END SWIPER -->
+      </div>
+      <!-- END CONTENT -->
+      <div id="footer" class="mt-5">
+        <div class="container text-center">
+          <a href="#"><img src="./img/logo.png" height="50px" alt="" /></a>
+          <p class="content_footer">Truyện Quá Dài! Đéo Đọc</p>
+          <div class="content_footer">
+            <a href="#" class="text-dark text-decoration-none p-2"
+              >Điều khoản dịch vụ</a
+            >
+            <a href="#" class="text-dark text-decoration-none p-2"
+              >Chính sách bảo mật</a
+            >
+            <a href="#" class="text-dark text-decoration-none p-2"
+              >Về bản quyền</a
+            >
+            <a href="#" class="text-dark text-decoration-none p-2"
+              >Hướng dẫn sử dụng</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- END FOOTER -->
+    </div>
+    <script src="./js/homepage.js"></script>
+  </body>
+</html>
